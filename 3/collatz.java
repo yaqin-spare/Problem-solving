@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class CollatzSolver {
+public class collatz {
     
     static class Result {
         int number;
@@ -50,7 +50,6 @@ public class CollatzSolver {
     
     
     public static void main(String[] args) {
-      
         
         System.out.println("Finding the number under 1,000,000 with the longest Collatz chain...");
         long startTime = System.nanoTime();
@@ -61,9 +60,9 @@ public class CollatzSolver {
         double duration = (endTime - startTime) / 1_000_000.0;
         
         System.out.println("Execution Time: " + duration + " ms");
-
+        
         System.out.println("Starting number: " + res.number);
         System.out.println("Chain length: " + res.chainLength);
-       
-      
+    
+    }
 }
